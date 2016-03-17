@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  meeting: 2015-08-04
+  subject: MyText
+  status: false
+
+two:
+  name: MyString
+  meeting: 2015-08-04
+  subject: MyText
+  status: false
