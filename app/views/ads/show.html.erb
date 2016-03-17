@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @ad.name %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @ad.image %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @ad.url %>
+</p>
+
+<%= link_to 'Editar', edit_ad_path(@ad), class: 'btn btn-default' %> |
+<%= link_to 'Volver', ads_path, class: 'btn btn-default' %>

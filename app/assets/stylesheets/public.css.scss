@@ -1,0 +1,36 @@
+.barra-top{
+  background-color: darkred !important;
+  a{
+    color: white !important;
+  }
+}
+
+
+.tituloBlog{
+  background-color: #000000;
+
+  h1{
+    color:orange;
+    font-weight: bold;
+    font-size: 70px;
+    letter-spacing: -1px;
+  }
+
+  h3{
+    color: gray;
+    font-size: 23px;
+    font-family: Georgia, Helvetica, Arial, Sans-Serif;
+    margin-bottom: 30px;
+  }
+
+}
+
+.nosotros{
+  margin-top: 20px;
+}
+
+.ocultar{
+  height: 80px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}

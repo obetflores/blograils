@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @post.title %>
+</p>
+
+<p>
+  <strong>Contenido:</strong>
+  <%= @post.content %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @post.status %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @post.url %>
+</p>
+
+<%= link_to 'Editar', edit_post_path(@post), class: 'btn btn-default'  %> |
+<%= link_to 'Volver', posts_path, class: 'btn btn-default' %>

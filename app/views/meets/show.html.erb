@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre</strong>
+  <%= @meet.name %>
+</p>
+
+<p>
+  <strong>Cita:</strong>
+  <%= @meet.meeting %>
+</p>
+
+<p>
+  <strong>Proposito:</strong>
+  <%= @meet.subject %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @meet.status %>
+</p>
+
+<%= link_to 'Editar', edit_meet_path(@meet), class: 'btn btn-default' %> |
+<%= link_to 'Volver', meets_path, class: 'btn btn-default' %>

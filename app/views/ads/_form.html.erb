@@ -1,0 +1,29 @@
+<%= form_for(@ad) do |f| %>
+  <% if @ad.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ad.errors.count, "error") %> prohibited this ad from being saved:</h2>
+
+      <ul>
+      <% @ad.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label 'Nombre' %><br>
+    <%= f.text_field :name, class: "form-control" %>
+  </div>
+  <div class="field">
+    <%= f.label 'Imagen' %><br>
+    <%= f.text_field :image %>
+  </div>
+  <div class="field">
+    <%= f.label 'Url' %><br>
+    <%= f.text_field :url, class: "form-control" %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Guardar", class: 'btn btn-default' %>
+  </div>
+<% end %>

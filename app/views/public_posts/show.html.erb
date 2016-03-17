@@ -1,0 +1,28 @@
+<h2><strong> <%= @post.title %> </strong> <small> / <%= @post.category.name %> </small></h2>
+<small> <%= @post.created_at.to_formatted_s(:long)%>por<strong> <%=@post.user.email%></strong></small>
+<hr/>
+<%=post.content%>
+
+<h3>Comentarios</h3>
+<% @comment each do |c| %>
+    <blockquote>
+      <p><%= c.content %></p>
+      <footer><%=c.name %></footer>
+    </blockquote>
+<% end %>
+
+<h4>Crear comentario</h4>
+<%= form_tag create_comment_path do %>
+<div class="field">
+  <%= label_tag 'Nombre' %> <br>
+  <%= text_field_tag :name, nil, class: 'form-control' %>
+</div>
+<div class="field">
+  <%= label_tag 'Contenido' %> <br>
+  <%= text_area_tag :content, nil, class: 'form-control' %>
+</div>
+<div class="actions">
+  <%= submit_tag "Crear comentario", class: 'btn btn-default' %>
+</div>
+<% end %>
+

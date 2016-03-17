@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @comment.name %>
+</p>
+
+<p>
+  <strong>Contenido:</strong>
+  <%= @comment.content %>
+</p>
+
+<%= link_to 'Editar', edit_comment_path(@comment), class: 'btn btn-default' %> |
+<%= link_to 'Volver', comments_path, class: 'btn btn-default' %>
